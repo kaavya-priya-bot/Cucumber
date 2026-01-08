@@ -1,0 +1,20 @@
+{
+    "default":{
+        "paths": [
+            "src/test/feature/*.feature"
+        ],
+        "require": [
+            "src/test/stepDefinition/*.ts",
+            "src/hooks/hooks.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "dryRun": false,
+        "format":["progress-bar","html:reports/cucumber-html-report.html"],
+        "parallel":2
+    }
+}
