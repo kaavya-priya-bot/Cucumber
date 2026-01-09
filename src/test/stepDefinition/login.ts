@@ -5,11 +5,12 @@ setDefaultTimeout(60000);
 
 Given('User is on Home page', async function () {
     await pageFixtureVar.page.goto('http://leaftaps.com/opentaps/control/main');
+    pageFixtureVar.logger.info(`User is on Home page`);
 
 });
 
 Then('Home page is loaded successfully', async function () {
     //await expect(page).toHaveTitle('Your Store');
     console.log(await pageFixtureVar.page.title());
-    
+    pageFixtureVar.logger.info(`Home page is loaded successfully`);
 });

@@ -13,6 +13,7 @@
         "formatOptions": {
             "snippetInterface": "async-await"
         },
+        "publishQuiet": true,
         "dryRun": false,
         "format":["progress-bar","html:reports/cucumber-html-report.html"],
         "parallel":2
